@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eflyer</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Shopping Cart</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+
     <div class="sidebar" id="sidebar">
         <div class="cross" id="cross">x</div>
         <ul>
@@ -44,27 +42,26 @@
                     aria-expanded="false">
                     All Categories
                 </button>
-                <ul class="dropdown-menu">
+                <!-- <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="#">Action</a></li>
                     <li><a class="dropdown-item" href="#">Another action</a></li>
                     <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
+                </ul> -->
             </div>
             <div class="search">
                 <input type="text" placeholder="Search this Blog">
                 <img src="images/search-icon.png" alt="">
             </div>
-            <div class="dropdown">
+            <!-- <div class="dropdown">
                 <button class="btn btn-secondary dropdown-toggle button2" type="button" data-bs-toggle="dropdown"
                     aria-expanded="false">
                     <img src="images/flag-uk.png" alt=""> English
                 </button>
-                <ul class="dropdown-menu">
+                 <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="#"><img src="images/flag-france.png" alt="">French</a></li>
 
-                </ul>
-            </div>
-        </div>
+                </ul>--> 
+            </div> 
         <div class="heading">
             <h2>GET START</h2>
             <h2>YOUR FAVOURITE SHOPING</h2>
@@ -72,89 +69,54 @@
         </div>
     </header>
 
-    <div class="container">
 
-        <div class="maintext">
-            <h2>Man & Woman Fashion</h2>
-        </div>
-        <div class="pro1">
-
-            <div class="displaybox">
-                <h2>Man T -shirt</h2>
-                <p><span>Price</span> $ 30</p>
-                <div class="imgbox">
-                    <img src="images/tshirt-img.png" alt="">
+    <div class="cart-container">
+        <h2>Your Shopping Cart</h2>
+        <div class="cart-items">
+            <!-- Your cart items will be displayed here -->
+            <!-- Example item -->
+            <div class="cart-item">
+                <img src="images/dress-shirt-img.png" alt="Product">
+                <div class="item-details">
+                    <h3>Dress Shirt</h3>
+                    <p>Price: $99.99</p>
+                    <p>Quantity: 1</p>
                 </div>
-                <div class="bottomtext">
-                    <h5><a href="#">Buy Now</a></h5>
-                    <p><a href="#">See More</a></p>
+                <div class="item-actions">
+                    <button class="btn-remove">Remove</button>
                 </div>
             </div>
-
-            <div class="displaybox">
-                <h2>Man -shirt</h2>
-                <p><span>Price</span> $ 30</p>
-                <div class="imgbox">
-                    <img src="images/dress-shirt-img.png" alt="">
+            <div class="cart-item">
+                <img src="images/jhumka-img.png" alt="Product">
+                <div class="item-details">
+                    <h3>Jhumka</h3>
+                    <p>Price: $99.99</p>
+                    <p>Quantity: 1</p>
                 </div>
-                <div class="bottomtext">
-                    <h5><a href="#">Buy Now</a></h5>
-                    <p><a href="#">See More</a></p>
+                <div class="item-actions">
+                    <button class="btn-remove">Remove</button>
                 </div>
             </div>
-
-            <div class="displaybox">
-                <h2>Woman Scart</h2>
-                <p><span>Price</span> $ 30</p>
-                <div class="imgbox">
-                    <img src="images/women-clothes-img.png" alt="">
+            <div class="cart-item">
+                <img src="images/laptop-img.png" alt="Product">
+                <div class="item-details">
+                    <h3>Laptop</h3>
+                    <p>Price: $99.99</p>
+                    <p>Quantity: 1</p>
                 </div>
-                <div class="bottomtext">
-                    <h5><a href="#">Buy Now</a></h5>
-                    <p><a href="#">See More</a></p>
+                <div class="item-actions">
+                    <button class="btn-remove">Remove</button>
                 </div>
             </div>
         </div>
-
-
-
-       
-        <div class="loader_main">
-            <div class="loader"></div>
+        <div class="cart-total">
+            <!-- Total price and checkout button will be displayed here -->
+            <h3>Total: $299.97</h3>
+            <button class="btn-checkout">Checkout</button>
         </div>
-
     </div>
 
-    <footer>
-        <div class="footerlogo">
-            <img src="images/footer-logo.png" alt="">
-        </div>
-        <div class="input">
-            <input type="text" placeholder="Your Email">
-            <h5>SUBSCRIBE</h5>
-        </div>
-        <hr size="5" width="60%" color="white"> 
-
-        <nav>
-            <ul>
-                <li><a href="#">Best Sellers</a></li>
-                <li><a href="#">Gift Ideas</a></li>
-                <li><a href="#">New Releases</a></li>
-                <li><a href="#">Today's Deals</a></li>
-                <li><a href="#">Customer Service</a></li>
-            </ul>
-        </nav>
-
-        <div class="helpline">
-            <h5>Help Line Number : +92 3104941344</h5>
-        </div>
-
-        <div class="copyright">
-            <h6>© 2023 All Rights Reserved. Design by Muhammad Saad</h6>
-        </div>
-    </footer>
+    <script src="script.js"></script>
+    <!-- Add cart-specific JavaScript code here -->
 </body>
-<script src="script.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
 </html>
